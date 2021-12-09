@@ -51,4 +51,5 @@ RUN openssl req -x509 -nodes -days 365 -subj "/C=US/ST=CA/O=MySite/CN=site1.inte
 Label Maintainer: "edgar.aguilar.189@my.csun.edu"
 Expose 80
 Expose 443
+Expose 8443
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
