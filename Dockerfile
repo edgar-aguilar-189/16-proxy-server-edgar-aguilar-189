@@ -11,10 +11,6 @@ RUN apt-get install iputils-ping -y
 RUN apt-get install curl -y
 RUN apt-get install apache2 -y
 
-RUN sudo adduser images
-RUN sudo passwd -d images
-RUN sudo usermod -aG sudo images
-
 RUN a2enmod userdir
 RUN a2enmod autoindex
 RUN a2enmod proxy
@@ -24,10 +20,10 @@ RUN a2enmod ssl
 RUN a2enmod alias
 RUN sudo chmod -R 755 /var/www
 
-RUN mkdir -p /home/images/public_html
-COPY doggies.png /home/images/public_html
-COPY skate.png /home/images/public_html
-COPY gir.png /home/images/public_html
+RUN mkdir -p /home/images
+COPY doggies.png /home/images
+COPY skate.png /home/images
+COPY gir.png /home/images
 
 COPY site1.conf /etc/apache2/sites-available
 COPY site2.conf /etc/apache2/sites-available
