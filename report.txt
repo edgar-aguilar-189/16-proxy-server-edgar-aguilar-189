@@ -1,0 +1,11 @@
+Name: Edgar Aguilar
+Lab Name: 16-proxy-server
+Date Assigned: Dec 1, 2021
+Date Completed: Dec 8, 2021
+Status: Stalled.
+
+Outstanding Issues: Currently, forcing https to the other sites over port 443 is not working. Everything over port 8080 works. 
+
+Major Impediments: I can get steps 1-4 completed but then step 5 breaks for me if I do that. I can do all the steps over port 8080 but trying to force ssh breaks the site for me. For some reason, my self signed certificate will work at times and other times my browser does not allow me to proceed to the website, even though minutes before, the webserver was working. 
+
+Feedback Comments: I'm not sure if this has to do with browser cookie/cache issues. 
